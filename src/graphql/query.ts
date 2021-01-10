@@ -3,7 +3,7 @@ import fs from "fs";
 import { ClientType } from "./type";
 import { Client } from "src/models/info";
 
-const data = fs.readFileSync(__dirname + "/../../../sampleData.json", "utf-8");
+const data = fs.readFileSync(__dirname + "/../../sampleData.json", "utf-8");
 
 export const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",

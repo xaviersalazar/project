@@ -2,16 +2,11 @@
   "name": "project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently 'npm run tsc:watch' 'npm run dev'",
-    "dev": "nodemon build/src/index.js",
-    "lint": "npx tslint --init",
-    "tsc": "./node_modules/.bin/tsc",
-    "tsc:watch": "./node_modules/.bin/tsc -w",
-    "compile": "tsc -p .",
-    "script": "ts-node"
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "nodemon index.ts",
+    "start:client": "cd client && yarn start"
   },
   "repository": {
     "type": "git",

@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "strict": true
   },
-  "include": ["./src/**/*.ts", "./test/**/*.ts"],
+  "include": ["./src/**/*.ts", "./test/**/*.ts", "index.ts"],
   "exclude": [
     "./src/**/*.test.js",
     "./src/**/*.spec.js",
