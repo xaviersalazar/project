@@ -1,6 +1,7 @@
 import { AdditionalInfo } from "./additional-info";
 
-export interface Info {
+export interface Client {
+  id: string;
   age: number;
   name: string;
   gender: string;
