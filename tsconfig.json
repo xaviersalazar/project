@@ -1,10 +1,22 @@
 {
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "extensions": [".tsx", ".ts", ".js"],
+  "moduleResolution": "node",
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "rootDir": "./",
+    "rootDir": ".",
     "outDir": "./build",
+    "baseUrl": ".",
     "esModuleInterop": true,
     "strict": true
-  }
+  },
+  "include": ["./src/**/*.ts", "./test/**/*.ts"],
+  "exclude": [
+    "./src/**/*.test.js",
+    "./src/**/*.spec.js",
+    "./src/tests",
+    "node_modules",
+    "dist"
+  ]
 }
