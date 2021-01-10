@@ -20,6 +20,7 @@ export const ClientType = new GraphQLObjectType({
 export const AdditionalInfoType = new GraphQLObjectType({
   name: "AdditionalInfo",
   fields: () => ({
+    gender: { type: GraphQLString },
     company: { type: GraphQLString },
     email: { type: GraphQLString },
     phone: { type: GraphQLString },
