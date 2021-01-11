@@ -13,7 +13,3 @@ export interface IAdditionalInfo {
   phone: string;
   address: string;
 }
-
-export interface IClients {
-  getClients: IClient[];
-}
