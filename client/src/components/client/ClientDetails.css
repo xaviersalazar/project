@@ -1,0 +1,11 @@
+.client-info-label {
+  margin: 0;
+}
+
+.client-info-label::first-letter {
+  text-transform: capitalize;
+}
+
+.client-info {
+  margin-top: 4px;
+}

@@ -1,0 +1,33 @@
+.client-card {
+  width: 35%;
+  margin: 64px auto 0 auto;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.client-pic {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.pic {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  background: #fc5c65;
+  border-radius: 50%;
+}
+
+.pic-name {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5em;
+  color: #ffffff;
+  font-weight: 400;
+}
